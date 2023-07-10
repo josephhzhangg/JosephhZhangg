@@ -35,30 +35,6 @@ nav ul li a {
   font-size: 16px;
 }
 
-/* Hero section styles */
-.hero {
-  background-image: url('hero-bg.jpg');
-  background-size: cover;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-content {
-  text-align: center;
-  color: #fff;
-}
-
-.hero-content h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.hero-content h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
 
 /* Main sections styles */
 .container {
