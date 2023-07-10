@@ -173,7 +173,7 @@ footer {
 
 /* Hero section styles */
 .hero {
-  background-image: url('images/headshot.JPG');
+  background-image: url('headshot.JPG');
   background-size: cover;
   background-position: center;
   /* This line centers the background image */
