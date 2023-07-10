@@ -1,72 +1,487 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    
-    <!-- Hero Image CSS-->
-    <link rel="stylesheet" href="css/herostyle.css">
-
-    <title>Bootstrap 5 Portfolio </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!--
-    <audio controls>
-    <source src="assets/audio/feel good x sound of walking away.mp3" type="audio/mp3">
-    
-    </audio>
-    -->
-    <!-- Navigation Items -->
-    <div class="container">
+    <!-- Header -->
+    <header>
         <nav>
-            <ul class="nav nav-pills">
-                <li class="active">
-                    <a href="index.html" class="nav-link active"> Home </a>
-                </li>
-                <li>
-                    <a href="about.html" class="nav-link"> About Me </a>
-                </li>
-                <li>
-                    <a href="resume.html" class="nav-link"> Resume </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link"> Contact Me </a>
-                </li>
-
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#technical-experience">Technical Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </div>
+    </header>
 
-    <div class="hero-image">
-        <div class="hero-text">
-          <h1 style="font-size:50px">Joseph Zhang</h1>
-          <p>Stanford University Class of 2023</p>
-          <a href="about.html" class="btn btn-light"> About Me </a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Joseph Zhang</h1>
+            <h2>Developer</h2>
+            <a href="#contact" class="btn">Get in touch</a>
         </div>
-      </div>
+    </section>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi there! I'm currently at Stanford finishing up concurrent Master's and Bachelor's degrees in Computer
+                Science (Artificial Intelligence Track) and Cognitive Science.
+                I'm particularly interested in developing novel technologies leveraging A.I. and in coding projects that
+                have the potential
+                for high social impact. I'm passionate about projects regarding the intersection of algorithms,
+                sustainability, and resource allocation/equity. In my free time, I enjoy playing squash, creating pop
+                remixes, and shamelessly looking up the answers to the New York Times crossword puzzles.</p>
+        </div>
+    </section>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
+    <section id="education contact" class = "education contact"> 
+    <div class="row">
+        <!-- Education Section -->
+        <section id="education" class="column">
+            <div class="container">
+                <h2>Education</h2>
+    
+                <!-- Education Item 1 -->
+                <div class="education-item card">
+                    <img src="stanford_logo.webp" alt="Stanford University Logo" class="education-logo">
+                    <div class="education-details">
+                        <h3>Stanford University</h3>
+                        <p class="education-info">M.S., Computer Science, Artificial Intelligence Track</p>
+                        <p class="education-info">Spring / Fall 2024</p>
+                    </div>
+                </div>
+    
+                <!-- Education Item 2 -->
+                <div class="education-item card">
+                    <img src="stanford_logo.webp" alt="Stanford University Logo" class="education-logo">
+                    <div class="education-details">
+                        <h3>Stanford University</h3>
+                        <p class="education-info">B.S., Symbolic Systems, Cognitive Science Track</p>
+                        <p class="education-info">June 2024</p>
+                    </div>
+                </div>
+    
+                <!-- Education Item 3 -->
+                <div class="education-item card">
+                    <img src="gsmst_logo.png" alt="High School Logo" class="education-logo">
+                    <div class="education-details">
+                        <h3>Gwinnett School of Math, Science, and Technology</h3>
+                        <p class="education-info">High School</p>
+                        <p class="education-info">May 2019</p>
+                    </div>
+                </div>
+    
+                <!-- Add more education items as needed -->
+    
+            </div>
+        </section>
+    
+        <!-- Contact Section -->
+        <section id="contact" class="column">
+            <div class="container">
+                <h2>Contact Information</h2>
+                <p>Phone: +1 404-518-0408</p>
+                <p>Email: josephz@stanford.edu </p>
+                <p>LinkedIn: linkedin.com/in/joseph-zhang-116152187/</p>
+            </div>
+        </section>
+    
+    </div>
+    </section>
 
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
+
+    <!-- Technical Experience Section -->
+    <section id="technical-experience" class="technical-experience">
+        <div class="container">
+            <h2>Technical Experience</h2>
+
+            <!-- Technical Experience Item 1 -->
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3 class="experience-title">The Farmlink Project</h3>
+                    <span class="experience-date">June 2023 - Present</span>
+                </div>
+                <div class="experience-content">
+                    <p class="experience-info">Software Engineering Intern</p>
+                    <br>
+                    <ul>
+                        <li>Maintaining SQL databases using FusionWare technologies</li>
+                        <li>Constructing data pipelines to optimize for delivery and food recovery routes</li>
+                    </ul>
+                    <p class="experience-description">The Farmlink Project is a non-profit organization that aims to
+                        reduce
+                        food waste and combat hunger by rescuing surplus produce from farms and distributing it to food
+                        banks across the United States. Their efforts help bridge the gap between farms with excess
+                        produce
+                        and communities in need, addressing both food waste and food insecurity issues.</p>
+                </div>
+            </div>
+
+            <!-- Technical Experience Item 2 -->
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3 class="experience-title">McKinsey & Company, Digital Practice</h3>
+                    <span class="experience-date">June 2022 - September 2022</span>
+                </div>
+                <div class="experience-content">
+                    <p class="experience-info">Business Analyst</p>
+                    <br>
+                    <ul>
+                        <li>Directed pricing model for F500 Healthcare company, ~80 million valuation</li>
+                        <li>Completing due diligence to compile analytics for consulting decisions</li>
+                        <li>Reporting metrics and recommend key insights to C-suite executives for Managed Captive
+                            Services
+                        </li>
+                    </ul>
+                    <p class="experience-description">McKinsey & Company is a global management consulting firm known
+                        for
+                        its strategic advisory services across various industries. With a focus on rigorous analysis,
+                        data-driven insights, and innovative problem-solving, McKinsey collaborates with leading
+                        organizations to tackle their most critical challenges and drive sustainable impact.</p>
+                </div>
+            </div>
+
+            <!-- Technical Experience Item 3 -->
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3 class="experience-title">AbilityHacks</h3>
+                    <span class="experience-date">Jan 2021 - June 2021</span>
+                </div>
+                <div class="experience-content">
+                    <p class="experience-info">CS for Social Good Studio Instructor</p>
+                    <br>
+                    <ul>
+                        <li>Project manager on a student team working to expand navigation accessibility to disabled
+                            sailors
+                        </li>
+                        <li>Coordinating with nonprofit to develop an app (React/NodeJS) to help blind people navigate
+                            public areas</li>
+                    </ul>
+                    <p class="experience-description">AbilityHacks is a program aimed at leveraging technology for
+                        social good. I
+                        served as a project manager for Stanford's CS50 student team focused on enhancing navigation
+                        accessibility for disabled sailors.
+                        Together with the nonprofit, we developed an app to assist blind individuals in navigating
+                        public
+                        areas, empowering them to move independently and confidently in their daily lives</p>
+                </div>
+            </div>
+
+            <!-- Technical Experience Item 4 -->
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3 class="experience-title">UNICEF</h3>
+                    <span class="experience-date">July 2020 - Aug 2020</span>
+                </div>
+                <div class="experience-content">
+                    <p class="experience-info">Software Engineering Intern</p>
+                    <br>
+                    <ul>
+                        <li>Utilized Google Flutter/Firebase to create a messaging platform for connecting global
+                            policymakers to U-Reporters</li>
+                        <li>Connected coronavirus emergency relief resources on a platform used by 8 million users
+                            spanning
+                            60 countries</li>
+                    </ul>
+                    <p class="experience-description">In the wake of the COVID-19 pandemic, I worked with UNICEF
+                        managers and developers to enhance
+                        U-Report, a powerful social messaging tool and data collection system. Our collective goal was
+                        to meet the increasing
+                        demand for healthcare reporting and resource allocation. By leveraging SMS polls and alerts,
+                        U-Report empowers citizens,
+                        enabling real-time data collection and publication. The platform helps to track disease spread
+                        data, informs leaders with valuable insights,
+                        and connects citizens to the help they need.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Technical Experience Item 5 -->
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3 class="experience-title">Hong Lab, Stanford</h3>
+                    <span class="experience-date">May 2020 - Nov 2020</span>
+                </div>
+                <div class="experience-content">
+                    <p class="experience-info">Materials Science Engineering REU Research Fellow</p>
+                    <br>
+                    <ul>
+                        <li>Created a computational model to accurately predict neuronal stimulation using photovoltaic
+                            systems</li>
+                        <li>Modeled optical scattering and photon adsorption of materials, optimized electronic property
+                            data in MATLAB, created circuit patterning to model neural tissue and photovoltage interaction
+                        </li>
+                    </ul>
+                    <p class="experience-description">I interned at the Hong Lab at Stanford, creating a computational model
+                        that predicts neuronal stimulation in mice.
+                        By modeling optical scattering and photon adsorption in materials and optimizing electronic properties
+                        with
+                        MATLAB, I gained insights into the complex dynamics of neural tissue and its interaction with
+                        photovoltage under advisor Ajay Subramanian. This
+                        research contributed to advancements in bioelectronics and neurotechnology, pushing the boundaries of
+                        our understanding
+                        and opening new avenues for innovation in the field.</p>
+                </div>
+            </div>
+            
+    </section>
+
+    </section>
+
+    <section id="leadership" class="leadership">
+        <div class="container">
+            <h2>Leadership</h2>
+    
+            <!-- Leadership Experience Item 1 -->
+            <div class="leadership-card">
+                <div class="leadership-header">
+                    <h3 class="leadership-title">President | Alpha Kappa Psi Business Fraternity | Pi Tau Chapter, Alpha Pi
+                        Class</h3>
+                </div>
+                <div class="leadership-content">
+                    <ul>
+                        <li>Organized Spring recruitment with professional workshops, meetings, and events</li>
+                        <li>Communicated between chapter’s executive committee, active members, alumni, and nationals
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Leadership Experience Item 2 -->
+            <div class="leadership-card">
+                <div class="leadership-header">
+                    <h3 class="leadership-title">ASES Stanford Entrepreneurship Society Summit Organizer</h3>
+                </div>
+                <div class="leadership-content">
+                    <ul>
+                        <li>Met with team to plan entrepreneurial workshops and VC panels for an international conference aimed at connecting investors, professors, and
+                            start-up entrepreneurs</li>
+                    </ul>
+                </div>
+            </div>
+            
+            Other Student Orgs: Dragonboat Rowing, Men's Squash, Stanford Structured Liberal Education (SLE) Alumnus
+        </div>
+    </section>
+
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+    
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="column">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Heart Disease Diagnosis: Analysis of ML Methods for Accurate Prognosis
+                            </h3>
+                            <p class="experience-info">CS 229 | Machine Learning | Spring 2023</p>
+                        </div>
+                        <div class="project-content">
+                            <ul>
+                                <li>Analysis of various methods including K-means, LogReg, SVM, Random Forest and
+                                    GradBoosting, GDA
+                                    for heart disease prognosis</li>
+                                <li>Implementation of a Generative Adversarial Network to supplement existing data</li>
+                            </ul>
+                            <a href="https://github.com/josephhzhangg/cs229finalproject" class="project-button"
+                                target="_blank">GitHub</a>
+                            <a href="https://drive.google.com/file/d/1Kib9_cL6FIhF4xFIXG2idyFwdzmaV-9_/view?usp=sharing"
+                                class="project-button" target="_blank">Paper</a>
+                            <a href="https://drive.google.com/file/d/13xHB_sOCWcrxc5KvJLVWfhshKkC4NmGE/view?usp=sharing"
+                                class="project-button" target="_blank">Poster</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Project 2 -->
+                <div class="column">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Music Genre Classification Using Convolutional Neural Networks</h3>
+                            <p class="experience-info">CS 230 | Deep Learning | Fall 2022</p>
+                        </div>
+                        <div class="project-content">
+                            <ul>
+                                <li>Created a Deep Learning architecture with TensorFlow to explore hyperparameters across
+                                    neural
+                                    nets</li>
+                                <li>Classified with an Adam optimizer on MFCC features for a validation accuracy of 0.83, a
+                                    ~20%
+                                    increase over literature</li>
+                            </ul>
+                            <a href="https://github.com/your-username/project-2" class="project-button"
+                                target="_blank">GitHub</a>
+                            <a href="https://drive.google.com/file/d/1VOJEpAm9yFeKodBeJZOola6qbxbPnyKI/view?usp=sharing"
+                                class="project-button" target="_blank">Paper</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Project 3 -->
+                <div class="column">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Fine-tuning BERT for Sentiment Analysis, Paraphrase Detection, and
+                                Semantic Textual Similarity</h3>
+                            <p class="experience-info">CS 224N | Natural Language Processing | Winter 2023</p>
+                        </div>
+                        <div class="project-content">
+                            <ul>
+                                <li>Implemented key aspects of the original BERT (Bidirectional Encoder Representations from
+                                    Transformers) model, including
+                                    multi-head self-attention and a Transformer layer.</li>
+                                <li>Utilized the completed BERT model to perform sentiment analysis on the Stanford
+                                    Sentiment Treebank dataset and another
+                                    dataset of movie reviews.</li>
+                            </ul>
+                            <a href="https://github.com/josephhzhangg/cs224nDFP" class="project-button"
+                                target="_blank">GitHub</a>
+                            <a href="https://drive.google.com/file/d/1OKCEZqgTMydYs1p6e5ke-_TtmEWVkjTV/view?usp=sharing"
+                                class="project-button" target="_blank">Paper</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Project 4 -->
+                <div class="column">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Reinforcement Learning Poker Bot</h3>
+                            <p class="experience-info">Psych 240A | Curiosity in Artificial Intelligence | Spring 2022</p>
+                        </div>
+                        <div class="project-content">
+                            <ul>
+                                <li>Coded a poker bot to curiously explore the environment as it exploits innate greedy or
+                                    cautious
+                                    betting behavior</li>
+                                <li>Modeled Markov decision processes with Monte-Carlo simulation, SARSA, and Q-learning
+                                    approximations</li>
+                            </ul>
+                            <a href="https://github.com/eqsmy/PSYCH240AProject" class="project-button"
+                                target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills-coursework" class="skills-coursework">
+    <div class="container">
+        <h2>Skills and Coursework</h2>
+
+        <!-- Skills and Awards -->
+        <div class="row">
+            <div class="column">
+                <h3>Machine Learning Skills:</h3>
+                <ul>
+                    <li>TensorFlow</li>
+                    <li>Pytorch</li>
+                    <li>Python</li>
+                    <li>Matlab</li>
+                </ul>
+
+                <h3>App and Web Development Skills:</h3>
+                <ul>
+                    <li>C++/C</li>
+                    <li>MATLAB</li>
+                    <li>Flutter/Dart</li>
+                    <li>Swift/SwiftUI</li>
+                    <li>React Native</li>
+                    <li>SQL/noSQL/Bigquery</li>
+                    <li>Firebase</li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h3>Languages:</h3>
+                <ul>
+                    <li>English</li>
+                    <li>Mandarin</li>
+                    <li>Korean</li>
+                </ul>
+
+                <h3>Awards:</h3>
+                <ul>
+                    <li>Gates Foundation Scholarship Recipient (300 finalists/50,000 applicants)</li>
+                    <li>QuestBridge Full Ride Scholarship</li>
+                    <li>Intel International Science and Engineering Fair Finalist (~2,000 finalists competing at the final level out of millions of students over 75 countries)</li>
+                    <li>American Statistical Association (ASA) Award</li>
+                    <li>Society for In-Vitro Biology Award</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Coursework -->
+        <div class="row">
+            <div class="column">
+                <h3>ML Coursework:</h3>
+                <ul>
+                    <li>Machine Learning</li>
+                    <li>Natural Language Processing</li>
+                    <li>Deep Learning</li>
+                    <li>Artificial Intelligence Principles</li>
+                    <li>Modern Algorithms</li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h3>Other:</h3>
+                <ul>
+                    <li>Applied Matrix Theory</li>
+                    <li>Regression Models and Analysis of Variance</li>
+                    <li>Vector Calculus</li>
+                    <li>Data Management and Data Systems</li>
+                    <li>Web Programming Fundamentals</li>
+                    <li>iOS Development</li>
+                    <li>Human Centered Product Management</li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h3>Coursework Continued:</h3>
+                <ul>
+                    <li>Design and Analysis of Algorithm</li>
+                    <li>Mathematical Foundations of Computing</li>
+                    <li>Computer Systems Principles</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Updated Summer 2023. Joseph Zhang. </p>
+    </footer>
+
+    <script>
+        function openPopup(pdfPath) {
+            var popup = document.createElement('div');
+            popup.className = 'popup';
+            var embed = document.createElement('embed');
+            embed.src = pdfPath;
+            embed.type = 'application/pdf';
+            embed.width = '100%';
+            embed.height = '100%';
+            popup.appendChild(embed);
+            document.body.appendChild(popup);
+        }
+    </script>
+
 </body>
 
 </html>

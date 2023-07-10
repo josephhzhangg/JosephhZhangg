@@ -1,0 +1,535 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Main sections styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.about p {
+  margin-bottom: 30px;
+}
+
+.projects {
+  background-color: #f7f7f7;
+  padding: 40px 0;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project-card img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  margin-bottom: 20px;
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+/* Right column */
+.right-column {
+  flex: 1;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+}
+
+.right-column h2 {
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info img {
+  width: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.contact-info span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contact-info a {
+  color: #666;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Education section styles */
+.education {
+  padding: 20px 0;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+}
+
+.education .container {
+  max-width: 1200px;
+  /* Increase the container width to utilize more space */
+  margin: 0 auto;
+  border: none;
+}
+
+.education h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.education-item {
+  margin-bottom: 30px;
+  clear: both;
+}
+
+.education-logo {
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 25px;
+  width: 75px;
+  /* Set a specific width for the logo */
+  height: 85px;
+  /* Set a specific height for the logo */
+}
+
+.education-item h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.education-details {
+  overflow: hidden;
+}
+
+.education-info {
+  font-size: 14px;
+  color: #666;
+}
+
+
+/* Hero section styles */
+.hero {
+  background-image: url('headshot.jpg');
+  background-size: cover;
+  background-position: center;
+  /* This line centers the background image */
+  height: 600px;
+  /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* Align content to the left */
+  color: #fff;
+  border-bottom: 4px solid #333;
+  /* Add a border at the bottom */
+  padding-left: 20px;
+  /* Add some left padding for the content */
+}
+
+.hero-content {
+  text-align: left;
+  /* Align text to the left */
+}
+
+.hero h1 {
+  font-size: 48px;
+  /* Increase the font size */
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  /* Increase the font size */
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #555;
+}
+
+
+
+/* Technical Experience section styles */
+.technical-experience {
+  padding: 40px 0;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+}
+
+.technical-experience .container {
+  max-width: 800px;
+  margin: 0 auto;
+  border: none;
+}
+
+.technical-experience h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.experience-card {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+  max-height: 300px;
+  /* Update this to an appropriate height */
+}
+
+.experience-card:hover {
+  max-height: 600px;
+  /* Update this to an appropriate height */
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.experience-title {
+  margin: 2px;
+  font-size: 18px;
+}
+
+.experience-date {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.experience-content {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.experience-info {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.experience-description {
+  margin-top: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.experience-card:hover .experience-description {
+  max-height: 250px;
+  /* Update this to an appropriate height */
+  opacity: 1;
+}
+
+.experience-content ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.experience-content ul li {
+  margin-bottom: 5px;
+  list-style-type: disc;
+}
+
+
+
+.leadership {
+  padding: 40px 0;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+}
+
+.leadership .container {
+  max-width: 800px;
+  margin: 0 auto;
+  border: none;
+}
+
+.leadership h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.leadership-card {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.leadership-header {
+  margin-bottom: 10px;
+}
+
+.leadership-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.leadership-content ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.leadership-content ul li {
+  margin-bottom: 5px;
+  list-style-type: disc;
+}
+
+.projects {
+  padding: 40px 0;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+}
+
+.projects .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: none;
+}
+
+
+.projects .column {
+  flex-basis: calc(100% - 10px);
+  /* Each project takes full width of the container minus the margin */
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.projects .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.project-card {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.project-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.experience-info {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.project-content ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.project-button {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-right: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: #45a049;
+}
+
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.project-button {
+  margin-top: 15px;
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+.skills-coursework {
+  padding: 40px 0;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+}
+
+.skills-coursework .container {
+  max-width: 800px;
+  margin: 0 auto;
+  border: none;
+}
+
+.skills-coursework h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.skills-coursework h3 {
+  margin-bottom: 10px;
+}
+
+.skills-coursework ul {
+  margin-bottom: 20px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.skills-coursework li {
+  margin-bottom: 5px;
+}
+
+.skills-coursework .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.skills-coursework .column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.skills-coursework .column:last-child {
+  margin-right: 0;
+}
